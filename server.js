@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
-const userRouter = require("./router/users");
+const userRouter = require("./router/students");
 const connectDB = require("./config/db");
 
-const port = 3000;
+const port = 3001;
 
 const cors = require("cors");
 
