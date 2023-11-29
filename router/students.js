@@ -5,12 +5,12 @@ const usercontroller = require("../controllers/student")
 
 router.get("/students", usercontroller.index)
 
-router.get("/student/:NIS", usercontroller.show)
+router.get("/student/:id", usercontroller.show)
 
 router.post("/student", usercontroller.store)
 
-router.put("/student/:NIS", usercontroller.update)
+router.put("/student/:id", usercontroller.update)
 
-router.delete("/student/:NIS", usercontroller.delete)
+router.delete("/student/:id", usercontroller.delete)
 
 module.exports = router
